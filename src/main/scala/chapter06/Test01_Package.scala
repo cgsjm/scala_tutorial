@@ -1,5 +1,3 @@
-package chapter06
-
 /**
  * @author Rainbow
  * @date 2021/4/18 14:37
@@ -9,7 +7,8 @@ package Test01_Package {
 
   package com {
 
-    import chapter06.Test01_Package.rainbow.scala.Inner
+    import Test01_Package.rainbow.scala.Inner
+
 
     //在外层包中定义单例对象
     object Outer {
@@ -25,7 +24,8 @@ package Test01_Package {
   package rainbow {
     package scala {
 
-      import chapter06.Test01_Package.com.Outer
+      import Test01_Package.com.Outer
+
 
       //在内层包中定义单例对象
       object Inner {
@@ -43,3 +43,5 @@ package Test01_Package {
   }
 
 }
+
+
