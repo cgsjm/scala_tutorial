@@ -36,6 +36,8 @@ object Test02_ArrayBuffer {
 
     println(newArr1 == arr1)
 
+    print("====================================")
+
     arr1 += 15
     println(arr1)
 
@@ -44,6 +46,8 @@ object Test02_ArrayBuffer {
     println(newArr2)
 
     println(arr1 == newArr2)
+
+    print("====================================")
 
     //往前追加
     77 +=: arr1

@@ -15,6 +15,8 @@ object Test04_List {
     println(list1(1))
     /*list1(1) = 12 error 不可修改*/
 
+    println("============================")
+
     //3、添加元素
     val list2 = 10 +: list1 //向前追加
     val list3 = list1 :+ 11 //向后追加
@@ -29,5 +31,15 @@ object Test04_List {
     val list7 = 17 :: 18 :: 19 :: 20 :: Nil
     println(list6)
     println(list7)
+
+    // 合并List
+    val list8 = list6 :: list7
+    println(list8) //List(List(32), 17, 18, 19, 20)
+
+    val list9 = list6 ::: list7
+    println(list9) //List(32, 17, 18, 19, 20)
+
+    val list10 = list6 ++ list7
+    println(list10) //List(32, 17, 18, 19, 20)
   }
 }
